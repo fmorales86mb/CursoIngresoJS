@@ -4,6 +4,11 @@
 */
 function Mostar()
 {
+	// Tomo el dato del tb por el prompt.
+	var dato = prompt("Ingrese dato:");
 	
+
+	// Muestro el dato por el alert.
+	document.getElementById("elNombre").value = dato;
 }
 
