@@ -7,23 +7,55 @@ a su opción  y le informaremos si ganó, empató o perdió.
 var eleccionMaquina;
 
 function comenzar()
-{
-	
+{	
+	// Defino nro random del 1 al 3. 	
+	eleccionMaquina = Math.floor(Math.random()*3)+1;
+}
 
-
-}//FIN DE LA FUNCIÓN
 function piedra()
 {
-	
+	switch (eleccionMaquina)
+	{
+		case 1:
+			alert("empató");
+			break;
+		case 2:
+			alert("perdió");
+			break;
+		case 3:
+			alert("ganó");
+			break;
+	}
+}
 
-}//FIN DE LA FUNCIÓN
 function papel()
 {
+	switch (eleccionMaquina)
+	{
+		case 1:
+			alert("ganó");
+			break;
+		case 2:
+			alert("empató");
+			break;
+		case 3:
+			alert("perdió");
+			break;
+	}
+}
 
-
-}//FIN DE LA FUNCIÓN
 function tijera()
 {
-	
-
-}//FIN DE LA FUNCIÓN
+	switch (eleccionMaquina)
+	{
+		case 1:
+			alert("perdió");
+			break;
+		case 2:
+			alert("ganó");
+			break;
+		case 3:
+			alert("empató");
+			break;
+	}
+}
